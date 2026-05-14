@@ -6,9 +6,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class PostagemService {
-  delete(id: number) {
-    throw new Error("Method not implemented.");
-  }
+
   constructor(
     @InjectRepository(Postagem)
     private postagemRepository: Repository<Postagem>,
